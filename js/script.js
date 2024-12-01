@@ -1,3 +1,4 @@
+
 function showContent(pageId) {
     var contentSections = document.querySelectorAll('.content');
     contentSections.forEach(function(section) {
