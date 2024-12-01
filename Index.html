@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Multiple Pages</title>
+    <!-- Підключення зовнішнього CSS файлу -->
+    <link rel="stylesheet" href="D:\123\project\css\styles.css">
+    <!-- Підключення Font Awesome для значків -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <!-- Ліві кнопки -->
+        <div class="nav-left">
+            <a href="javascript:void(0);" onclick="showContent('home')"><i class="fa fa-home"></i> Home</a>
+            <a href="javascript:void(0);" onclick="showContent('items')"><i class="fa fa-box"></i> Items</a>
+            <a href="javascript:void(0);" onclick="showContent('support')"><i class="fa fa-headset"></i> Support</a>
+            <a href="javascript:void(0);" onclick="showContent('about')"><i class="fa fa-info-circle"></i> About us</a>
+        </div>
+
+        <!-- Поле пошуку -->
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <!-- Праві кнопки -->
+        <div class="nav-right">
+            <a href="javascript:void(0);" onclick="showContent('settings')"><i class="fa fa-cogs"></i> Settings</a>
+            <a href="javascript:void(0);" onclick="showContent('login')"><i class="fa fa-sign-in-alt"></i> Login</a>
+        </div>
+    </nav>
+
+    <!-- Контент для кожної вкладки -->
+    <div id="home" class="content active">
+        <h1>Welcome to the Home Page</h1>
+    </div>
+
+    <div id="items" class="content">
+        <h1>Welcome to the Items Page</h1>
+    </div>
+
+    <div id="support" class="content">
+        <h1>Welcome to the Support Page</h1>
+    </div>
+
+    <div id="about" class="content">
+        <h1>Welcome to the About Us Page</h1>
+    </div>
+
+    <div id="settings" class="content">
+        <h1>Welcome to the Settings Page</h1>
+    </div>
+
+    <div id="login" class="content">
+        <h1>Welcome to the Login Page</h1>
+    </div>
+
+    <!-- Підключення зовнішнього JavaScript файлу -->
+    <script src="D:\123\project\js\script.js"></script>
+</body>
+</html>
